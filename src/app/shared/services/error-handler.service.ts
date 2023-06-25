@@ -31,7 +31,15 @@ export class ErrorHandlerService {
 
   private handleOtherError = (error: HttpErrorResponse) => {
     this.CreateErrorMessage(error);
-    // this.router.navigate(['/']);
+
+    // const config: any = {
+    //   initialState: {
+    //     modalHeaderText: 'Error Message',
+    //     modalBodyText: this.errorMessage,
+    //     okButtonText: 'OK',
+    //   },
+    // };
+    // this.modal.show(ErrorModalComponent, config);
   };
 
   private CreateErrorMessage = (error: HttpErrorResponse) => {
