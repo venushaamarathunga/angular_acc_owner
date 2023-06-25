@@ -78,6 +78,7 @@ export class OwnerCreateComponent implements OnInit {
           },
         };
         // this.redirectOnOk.subscribe(_) => this.redirectToOwnerList();
+        this.redirectToOwnerList();
       },
       error: (err: HttpErrorResponse) => {
         this.errorHandler.handleError(err);
