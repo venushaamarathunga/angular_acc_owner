@@ -18,7 +18,7 @@ export class AppendDirective implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['ownerParam'].currentValue) {
-      const accNum = changesgit['ownerParam'].currentValue.accounts.length;
+      const accNum = changes['ownerParam'].currentValue.accounts.length;
       const span = this.renderer.createElement('span');
       const text = this.renderer.createText(` (${accNum}) accounts`);
 
