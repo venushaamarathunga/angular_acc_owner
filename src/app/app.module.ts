@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './menu/menu.component';
 import { OwnerModule } from './owner/owner.module';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent, MenuComponent],
@@ -19,7 +20,7 @@ import { OwnerModule } from './owner/owner.module';
     // CollapseModule.forRoot(),
     OwnerModule,
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
